@@ -1,0 +1,30 @@
+---
+title: 'R Course: Lesson 2'
+author: "Demudu Naganaidu"
+date: "June 25, 2016"
+output: pdf_document
+---
+```{r, echo=FALSE}
+load("rcourse_lesson2_environment.RData")
+
+```
+
+# Introduction
+I looked at how common my name, "Page", is in the United States population both by Year and Sex
+
+# Results
+
+## Prevalance by Year
+Below is a plot for how the proportion of people with the name 'Page' (log base 10 transformation) has changed over time. Overall the trend is pretty flat.
+```{r}
+year.plot
+```
+To test if there is a significant effect of a year a linear model was built. Proportion of the population log base 10 transformed was the dependant variable
+
+```{r}
+year.lm
+```
+
+## Prevalance by Sex
+
+# Conclusion
